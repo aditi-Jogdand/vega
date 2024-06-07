@@ -7,7 +7,7 @@ import Lasagna from '../images/home/lasagna.webp';
 import Garden from '../images/home/garden.jpg';
 import Farmer from '../images/home/farmer.jpg';
 import Eve from '../images/home/eve.webp';
-import Clock from "./clock";
+
 const Home = () => {
   const [theme, setTheme] = createSignal(localStorage.getItem('theme') || 'light');
   const [posts, setPosts] = createSignal([
@@ -79,7 +79,7 @@ const Home = () => {
 
   return (
     <>
-    <Clock/>
+    
       <div class="dark:bg-gray-900">
         <div class={`min-h-screen flex flex-col items-center ${theme() === 'dark' ? 'dark' : ''}`}>
           {/* Navbar */}
